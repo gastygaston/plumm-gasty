@@ -1,0 +1,595 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.fondoPrincipal {
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+   
+   
+}
+
+header{
+    
+    background-color:rgb(109, 53, 109);
+   
+    color: saddlebrown;
+    width: 100%;
+    height: 70px;
+     margin-bottom: 0px;
+     position: sticky;
+     top: 0;
+     z-index: 1;
+     } 
+
+  #aMargin {
+     padding: 0px;
+  }
+
+    
+      
+
+   .imgLogo {
+     
+      width:130px;
+      height:60px;
+      float: left;
+      margin-top: 9px;
+     
+   }
+   
+   ul {
+      
+     list-style: none; 
+     display:flex;
+     justify-content: center;
+    
+     
+ 
+      }
+
+   li {
+    margin-top: 20px;
+    
+   
+
+     }
+
+   
+    
+    
+    a { 
+        color: rgb(250, 99, 250);
+    text-decoration: none;
+    font-size: 23px;
+    padding: 40px;
+    
+    
+    }
+
+   
+    
+   ul li a:hover {
+       background-color: cornsilk;
+       padding: 25px 40px 25px 40px;
+     
+   } 
+
+ 
+ 
+     
+
+
+     /*arranca titulo*/
+
+    
+
+    .tituloPrincipal {
+     text-align: center;
+     margin-top: 200px;
+
+    }
+     
+h1 {
+    color: rgb(255, 77, 77);
+    font-size: 50px;
+    font-family:'Merriweather', serif;
+    text-align: center;
+    
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+.principal {
+   color: rgb(238, 220, 220);
+    font-family:'Merriweather', serif; 
+    font-size: 40px;
+    animation-duration:6s;
+    animation-name: principal;
+    animation-iteration-count: infinite;
+   
+    
+    
+}
+
+@keyframes principal {
+   0% {
+       opacity: 1;
+       color: yellow;
+      transform:scale(1.1, 1.3);
+   }
+  50% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+     
+  }
+
+
+}
+
+.principal1 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    animation-duration:6s;
+    animation-name: principal1;
+    animation-iteration-count: infinite;
+  
+     }
+
+     @keyframes principal1 {
+         0% {
+             opacity: 0;
+            }
+          50% {
+              color: yellow;
+              opacity: 1;
+             
+           }
+           100% {
+               opacity: 0;
+           }  
+      }
+      .avion {
+          padding: 50px;
+          margin-top: 100px;
+          transition: all 4s ease;
+     }
+     .avion:hover {
+         transform: translate(4000px);
+         
+
+     }
+
+     /*arranca fotos pagina principal */
+
+    .mapasYTexto {
+      
+        display: flex;
+       margin: 160px 80px 0px 80px;
+       text-align: center;
+      transition: all 2s ease;
+    }
+
+    .mapasYTexto:hover{
+        transform: scale(1.1, 1.2);
+       
+
+
+    }
+      .mapa {
+        opacity: .7;
+          box-shadow: 3px 3px 14px #ccc;
+          margin: 20px;
+          background-color: rgba(128, 128, 128, 0.726);
+          transition: all 2s ease;
+
+      }
+      .mapa:hover {
+          opacity: 1;
+          
+      }
+
+      .textoMapa {
+          padding-right: 80px;
+          padding-left:80px ;
+          font-size: 20px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          color: rgb(248, 231, 231);
+          word-spacing:5px;
+         
+      } 
+
+     
+     .paraDondeIr {
+         text-align: left;
+       position: relative;
+       top:400px;
+     }
+     
+
+footer {
+    background-color:rgba(82, 25, 82, 0.473);
+    margin-top: 500px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+   
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+   
+    
+   
+
+         header {
+           
+            width: 100%;
+            height:200px;
+            padding:15px ;
+           
+           
+             } 
+
+             ul {
+                
+                 flex-direction: column;
+                 justify-content: center;
+             }
+
+           
+             li {
+             margin: 3px;
+             padding: 2px;
+            
+            
+                 }
+
+                 a { 
+                font-size: 17px;
+                padding:20px;
+                }
+
+                .imgLogo {
+
+                    margin-bottom: 50px;
+     
+                   
+                 }
+                 .mapasYTexto {
+      
+                    display: flex;
+                  flex-direction: column;
+                  width: 350px;
+                 
+                  
+                  
+                }
+
+                .mapa p {
+                    
+                    font-size: 17px;
+                    padding: 3px;
+                }
+
+            
+                 .mapa  img {
+                     width: 100px;
+                  }
+
+                
+        }
+
+        @media only screen and (max-width: 1024px) and (min-width:728px)
+        { 
+            
+                
+                 
+                 header{
+           
+                    
+                    padding:20px ;
+                   
+                   
+                     } 
+
+                     li {
+                      
+                      
+                        padding-right:10px ;
+                       
+                            }
+
+                            a { 
+                                font-size: 20px;
+                                padding:0;
+                                }
+
+                              
+               
+
+         }
+
+/* ARRANCA SECCION servicios */
+
+.mainServicios {
+    background-image: url(img/porquee.jpg);
+}
+
+.SeccionServicios {
+    
+    margin-top: 150px ;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 5fr 5fr;
+    grid-template-areas: 
+    "textoPrincipal textoPrincipal foto foto"
+    "texto1 texto2 foto foto"
+    "texto3 texto4 foto foto"
+    ;
+
+}
+
+.hijo {
+    padding: 5px 40px 5px 40px;
+    
+    background-color: rgb(247, 224, 243);
+   
+}
+
+.texto1 {
+    grid-area: texto1;
+}
+
+.texto2 {
+    grid-area: texto2;
+}
+
+.texto3 {
+    grid-area: texto3;
+}
+
+.texto4 {
+grid-area: texto4;
+}
+
+.foto{
+    grid-area: foto;
+    
+}
+
+.textoPrincipal {
+    grid-area: textoPrincipal;
+    padding-top: 30px;
+}
+
+.subtituloServicios {
+    font-size: 35px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    
+}
+
+.textoServicios {
+    font-size: 17px;
+    color: rgb(92, 14, 88);
+    
+}
+
+ .tituloTextoServ {
+    font-size: 30px;
+    padding-bottom: 10px;
+    
+}
+
+.hijo img {
+   display:flex;
+   justify-content:start ;
+}
+
+ /*arranca por que elegirnos */
+
+ .bodyPorqueElegirnos {
+   background-color:rgb(212, 209, 209);  
+ }
+ .subPorque{
+background-image: url(img/porquee.jpg);
+color:rgb(218, 255, 255);
+font-size: 18px;
+margin: 10px 30px;
+ }
+
+ .porqueElegirnos {
+     text-align: center;
+ }
+ 
+ .textoPorqueElegirnos {
+     margin: 40px 40px;
+     display: flex;
+    
+     
+ }
+
+ .textoSepararPorque {
+     padding: 30px 25px 30px 25px;
+    
+   
+ }
+
+ .parrafoPorque {
+     font-size: 18px;
+     padding-top: 7px;
+ }
+
+ .separadoPorque {
+     
+     background-image: url(./img/casami.jpg);
+     background-attachment: fixed;
+     padding: 7%;
+     width:100%;
+     opacity: .9;
+    
+
+ }
+
+ .textoSeparadoPorque {
+  
+    font-size: 35px;
+    text-align:left;
+    border-left:1px solid blanchedalmond;
+    color: rgb(0, 0, 0);
+    
+ }
+
+ .tituloNuestroPersonal {
+   font-size: 50px;
+   color: brown;
+   margin-top: 20px; 
+   margin-bottom:50px; 
+ }
+
+ .carrouselImagenes {
+    box-shadow:3px 3px 20px rgb(144, 150, 150);
+    width: 350px;
+    padding:0;
+   
+   
+}
+      
+     
+ 
+
+/*arranca innovaciones */
+
+.subTit {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 70px;
+
+
+}
+.contenedorUltimo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.festejemosJuntos {
+    background-color: salmon;
+    border:2px  rgb(240, 112, 66) solid;
+    padding: 0px 0px 10px 0px;
+    width: 304px;
+    height: 440px;
+    position: relative;
+    top:70px
+    
+     }
+
+
+.pastas {
+   background-color: rgb(224, 102, 89);
+   border: 2px rgb(197, 87, 74);
+    padding-bottom: 10px;
+    width: 300px;
+
+}
+
+.cumpleAño {
+    background-color: rgb(211, 112, 101);
+border: 2px  rgb(109, 47, 24) solid;
+
+width: 305px;
+height: 450px;
+
+position: relative;
+top: 70px;
+
+}
+
+/* ARRANCA SECCION contactos */
+
+.tituloContacto {
+    text-align: center;
+}
+.seccionContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+   
+}
+
+.info { 
+    font-size: 20px;
+    border: 2px  color rosybrown solid ;
+  
+    
+}
+
+fieldset{
+  
+    width: 900px;
+    
+}
+
+/* ARRANCA SECCION Galeria */
+
+.seccionGaleria {
+    background-color: rgb(19, 6, 16);
+   
+}
+
+
+   
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 100px;
+   
+}
+
+.fotosGaleria {
+    margin-bottom:100px;
+}
+
+.fotosGaleria h3 {
+    margin-bottom: 20px;
+    color: thistle;
+}
+
+
+.galeria img {
+
+    width: 550px;
+   opacity: .6;
+   border: 2px double rgb(107, 33, 107);
+    margin-right: 6px;
+    margin-bottom: 15px;
+    transition: all 1s ease;
+   
+   
+   
+
+}
+.galeria img:hover {
+    opacity: 1;
+    border: 2px white solid;
+    transform: scale(1.3, 1.3 );
+    
+}
