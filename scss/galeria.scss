@@ -1,0 +1,40 @@
+.seccionGaleria {
+    background-color: rgb(19, 6, 16);
+   
+}
+
+
+    .galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 100px;
+         img {
+
+            width: 550px;
+           opacity: .6;
+           border: 2px double rgb(107, 33, 107);
+            margin-right: 6px;
+            margin-bottom: 15px;
+            transition: all 1s ease; }
+             img:hover {
+                opacity: 1;
+                border: 2px white solid;
+                transform: scale(1.3, 1.3 );
+                
+            }
+           .fotosGaleria {
+            margin-bottom:100px;
+            h3 {
+                margin-bottom: 20px;
+                color: thistle;
+            }
+        }
+         
+        
+       
+    }
+ 
+
+

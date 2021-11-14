@@ -121,18 +121,6 @@ h1 {
 .mapasYTexto:hover {
   transform: scale(1.1, 1.2); }
 
-.paraDondeIr {
-  text-align: left;
-  position: relative;
-  top: 400px; }
-
-footer {
-  background-color: rgba(82, 25, 82, 0.473);
-  margin-top: 500px;
-  color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
-
-/* ARRANCA SECCION servicios */
 .bodyServicios {
   background-image: url(../img/porquee.jpg); }
 
@@ -174,7 +162,7 @@ main .SeccionServicios {
     display: flex;
     justify-content: start; }
 
-/*arranca por que elegirnos */
+porque elegirnos
 .bodyPorqueElegirnos {
   background-color: #d4d1d1; }
 
@@ -218,7 +206,49 @@ main .SeccionServicios {
   width: 350px;
   padding: 0; }
 
-/*arranca innovaciones */
+.bodyPorqueElegirnos {
+  background-color: #d4d1d1; }
+
+.porqueElegirnos {
+  text-align: center; }
+  .porqueElegirnos .subPorque {
+    background-image: url(../img/porquee.jpg);
+    color: #daffff;
+    font-size: 18px;
+    margin: 10px 30px; }
+
+.textoPorqueElegirnos {
+  margin: 40px 40px;
+  display: flex; }
+  .textoPorqueElegirnos .textoSepararPorque {
+    padding: 30px 25px 30px 25px; }
+    .textoPorqueElegirnos .textoSepararPorque .parrafoPorque {
+      font-size: 18px;
+      padding-top: 7px; }
+
+.separadoPorque {
+  background-image: url(../img/casami.jpg);
+  background-attachment: fixed;
+  padding: 7%;
+  width: 100%;
+  opacity: .9; }
+  .separadoPorque .textoSeparadoPorque {
+    font-size: 35px;
+    text-align: left;
+    border-left: 1px solid blanchedalmond;
+    color: black; }
+
+.tituloNuestroPersonal {
+  font-size: 50px;
+  color: brown;
+  margin-top: 20px;
+  margin-bottom: 50px; }
+
+.carrouselImagenes {
+  box-shadow: 3px 3px 20px #909696;
+  width: 350px;
+  padding: 0; }
+
 main .subTit {
   text-align: center;
   font-size: 30px;
@@ -251,7 +281,6 @@ main .cumpleAño {
   position: relative;
   top: 70px; }
 
-/* ARRANCA SECCION contactos */
 main .tituloContacto {
   text-align: center; }
 
@@ -267,7 +296,6 @@ main .seccionContacto {
 main fieldset {
   width: 900px; }
 
-/* ARRANCA SECCION Galeria */
 .seccionGaleria {
   background-color: #130610; }
 
@@ -293,3 +321,14 @@ main fieldset {
     .galeria .fotosGaleria h3 {
       margin-bottom: 20px;
       color: thistle; }
+
+.paraDondeIr {
+  text-align: left;
+  position: relative;
+  top: 400px; }
+
+footer {
+  background-color: rgba(82, 25, 82, 0.473);
+  margin-top: 500px;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
