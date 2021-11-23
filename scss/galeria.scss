@@ -10,18 +10,26 @@
         flex-wrap: wrap;
         text-align: center;
         margin: 100px;
+       
          img {
-
+           position: relative;
+            filter: brightness(50%);
             width: 550px;
-           opacity: .6;
            border: 2px double rgb(107, 33, 107);
             margin-right: 6px;
             margin-bottom: 15px;
-            transition: all 1s ease; }
+            transition: all 1s ease; 
+            z-index: 2;
+    
+        }
+            
              img:hover {
-                opacity: 1;
+                filter: brightness(100%);
                 border: 2px white solid;
-                transform: scale(1.3, 1.3 );
+                transform: scale(1.1, 1.1 );
+               z-index: 3;
+             
+               
                 
             }
            .fotosGaleria {

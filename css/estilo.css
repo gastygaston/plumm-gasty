@@ -16,8 +16,8 @@ header {
   margin-bottom: 0px;
   position: sticky;
   top: 0;
-  z-index: 1; }
-  header #aMargin {
+  z-index: 5; }
+  header nav #aMargin {
     padding: 0px; }
   header nav .imgLogo {
     width: 130px;
@@ -33,12 +33,29 @@ header {
     header nav ul a {
       color: #fa63fa;
       text-decoration: none;
-      font-size: 23px;
+      font-size: 19px;
       padding: 40px; }
 
 ul li a:hover {
   background-color: cornsilk;
-  padding: 25px 40px 25px 40px; }
+  padding: 23px 40px 23px 40px; }
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 100%; }
+    header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding-right: 30px; }
+      header nav ul li {
+        margin: 5px;
+        padding: 9px; }
+      header nav ul a {
+        font-size: 20px; }
+    header nav .imgLogo {
+      width: 70px;
+      margin: 100px 0 0 0;
+      padding: 0; } }
 
 /*arranca titulo*/
 .tituloPrincipal {
@@ -78,14 +95,6 @@ ul li a:hover {
   100% {
     opacity: 0; } }
 
-.avion {
-  padding: 50px;
-  margin-top: 100px;
-  transition: all 4s ease; }
-
-.avion:hover {
-  transform: translate(4000px); }
-
 p {
   font-size: 15px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
@@ -95,6 +104,12 @@ h1 {
   font-size: 50px;
   font-family: 'Merriweather', serif;
   text-align: center; }
+
+@media only screen and (max-width: 768px) {
+  .tituloPrincipal .principal {
+    font-size: 30px;
+    color: yellow;
+    animation: none; } }
 
 /*arranca fotos pagina principal */
 .mapasYTexto {
@@ -120,6 +135,22 @@ h1 {
 
 .mapasYTexto:hover {
   transform: scale(1.1, 1.2); }
+
+@media only screen and (max-width: 768px) {
+  .mapasYTexto {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 230px 0 0 10px;
+    padding: 0;
+    width: 80px;
+    transition: none; }
+    .mapasYTexto .mapa {
+      transition: none; }
+      .mapasYTexto .mapa .textoMapa {
+        font-size: 15px; } }
+
+.mapasYTexto:hover {
+  transform: none; }
 
 .bodyServicios {
   background-image: url(../img/porquee.jpg); }
@@ -161,50 +192,6 @@ main .SeccionServicios {
   main .SeccionServicios .hijo img {
     display: flex;
     justify-content: start; }
-
-porque elegirnos
-.bodyPorqueElegirnos {
-  background-color: #d4d1d1; }
-
-.porqueElegirnos {
-  text-align: center; }
-  .porqueElegirnos .subPorque {
-    background-image: url(../img/porquee.jpg);
-    color: #daffff;
-    font-size: 18px;
-    margin: 10px 30px; }
-
-.textoPorqueElegirnos {
-  margin: 40px 40px;
-  display: flex; }
-  .textoPorqueElegirnos .textoSepararPorque {
-    padding: 30px 25px 30px 25px; }
-    .textoPorqueElegirnos .textoSepararPorque .parrafoPorque {
-      font-size: 18px;
-      padding-top: 7px; }
-
-.separadoPorque {
-  background-image: url(../img/casami.jpg);
-  background-attachment: fixed;
-  padding: 7%;
-  width: 100%;
-  opacity: .9; }
-  .separadoPorque .textoSeparadoPorque {
-    font-size: 35px;
-    text-align: left;
-    border-left: 1px solid blanchedalmond;
-    color: black; }
-
-.tituloNuestroPersonal {
-  font-size: 50px;
-  color: brown;
-  margin-top: 20px;
-  margin-bottom: 50px; }
-
-.carrouselImagenes {
-  box-shadow: 3px 3px 20px #909696;
-  width: 350px;
-  padding: 0; }
 
 .bodyPorqueElegirnos {
   background-color: #d4d1d1; }
@@ -263,7 +250,7 @@ main .festejemosJuntos {
   border: 2px #f07042 solid;
   padding: 0px 0px 10px 0px;
   width: 304px;
-  height: 440px;
+  height: 480px;
   position: relative;
   top: 70px; }
 
@@ -277,7 +264,7 @@ main .cumpleAño {
   background-color: #d37065;
   border: 2px #6d2f18 solid;
   width: 305px;
-  height: 450px;
+  height: 480px;
   position: relative;
   top: 70px; }
 
@@ -288,13 +275,23 @@ main .seccionContacto {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  left: 200px;
   margin-top: 80px; }
   main .seccionContacto .info {
+    border: 2px color #993d3d solid;
     font-size: 20px;
-    border: 2px  color rosybrown solid; }
+    position: relative;
+    right: 200px; }
 
-main fieldset {
-  width: 900px; }
+main form fieldset {
+  background-color: #dada91;
+  border: 2px yellow solid;
+  border-radius: 10px;
+  width: 820px;
+  position: relative;
+  right: 180px;
+  padding: 20px; }
 
 .seccionGaleria {
   background-color: #130610; }
@@ -306,16 +303,19 @@ main fieldset {
   text-align: center;
   margin: 100px; }
   .galeria img {
+    position: relative;
+    filter: brightness(50%);
     width: 550px;
-    opacity: .6;
     border: 2px double #6b216b;
     margin-right: 6px;
     margin-bottom: 15px;
-    transition: all 1s ease; }
+    transition: all 1s ease;
+    z-index: 2; }
   .galeria img:hover {
-    opacity: 1;
+    filter: brightness(100%);
     border: 2px white solid;
-    transform: scale(1.3, 1.3); }
+    transform: scale(1.1, 1.1);
+    z-index: 3; }
   .galeria .fotosGaleria {
     margin-bottom: 100px; }
     .galeria .fotosGaleria h3 {
